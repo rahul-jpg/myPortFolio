@@ -50,13 +50,10 @@ const About = () => {
                         <div className="col-span-3 flex-col flex items-center justify-start xl:col-span-4 md:order-2 md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my clients' visions to life.
+                                Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
                             </p>
                             <p className="font-medium my-4">
-                                I believe that design is about more than just making things look pretty – it's about solving problems and
-                                creating intuitive, enjoyable experiences for users.
+                                I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.
                             </p>
                             <p className="font-medium">
                                 Whether I'm working on a website, mobile app, or
