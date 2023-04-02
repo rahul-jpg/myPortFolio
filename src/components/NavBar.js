@@ -183,11 +183,7 @@ const NavBar = () => {
                                 e.preventDefault()
                                 setMode(mode === "light" ? "dark" : "light")
                             }}>
-                                {
-                                    mode === "dark" ?
-                                        <SunIcon className="fill-dark" /> :
-                                        <MoonIcon className="fill-dark" />
-                                }
+                                Tog
                             </button>
                         </nav>
                     </motion.div> :
