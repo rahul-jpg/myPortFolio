@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full'>
               <AnimatedText text="Turning Vision Into Reality With Code And Design" className='!text-5xl !text-left xl:!text-4xl lg:!text-center lg:!text-6xl md:!text-3xl sm:!text-2xl' />
-              <p className='text-red-500 my-4 text-sm font-medium lg:text-xl md:text-base sm:text-xs'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
+              <p className='my-4 text-sm font-medium lg:text-xl md:text-base sm:text-xs'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link
                   href="/dummy.pdf"
