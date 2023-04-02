@@ -35,10 +35,10 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     )
 }
 
-const NavBar = () => {
+const NavBar = ({ isOpen, setIsOpen }) => {
 
     const [mode, setMode] = useThemeSwitcher()
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -48,7 +48,7 @@ const NavBar = () => {
             className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-6"
         >
 
-            <button className="flex-col justify-center items-center hidden lg:flex select-none" onClick={handleClick}>
+            <button className="flex-col justify-center items-center hidden lg:flex select-none " onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light block transition-all select-none duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all select-none duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all select-none duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}></span>

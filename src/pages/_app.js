@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import { Montserrat } from "next/font/google"
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -13,17 +14,18 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
-        <NavBar />
+      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`} onClick={() => {
+        isOpen && setIsOpen(false)
+      }}>
+        <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <AnimatePresence mode='wait'>
-
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
         <Footer />
