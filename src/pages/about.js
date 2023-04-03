@@ -46,7 +46,7 @@ const About = () => {
             <TransitionEffect />
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Bringing your vision to life with passion and expertise." className="mb-16 lg:!text-5xl md:!text-4xl sm:!text-3xl xs:!text-xl sm:mb-8" />
+                    <AnimatedText text="Bringing your vision to life with passion and expertise." className="mb-16 lg:!text-5xl md:!text-4xl sm:!text-4xl xs:!text-xl sm:mb-8" />
                     <div className="w-full">
                         <div className="flex-col flex items-center justify-center leading-8 xs:text-xs sm:text-center">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
