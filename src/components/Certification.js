@@ -31,7 +31,7 @@ const Certification = () => {
         }
     )
     return (
-        <div className="mt-64 sm:mt-32 lg:mt-44">
+        <div className="mt-64 sm:mt-32 lg:mt-44 mb-16">
             <h2 className="font-bold text-7xl mb-32 w-full text-center md:text-5xl xs:text-3xl md:mb-16">Certifications</h2>
 
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
